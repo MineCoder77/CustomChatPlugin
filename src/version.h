@@ -21,10 +21,10 @@
 // The basic descriptions of your plugin
 // Note that the the plugin name CAN ONLY CONTAIN Enlish alphabet, digit, dash(-) and
 // underscore(_). 
-#define PLUGIN_NAME "Buyer"
+#define PLUGIN_NAME "CustomChat"
 // Describe what your plugin does
 // We recommend you start the introduction with a third-person singular verb.
-#define PLUGIN_INTRODUCTION "This plugin manage your buyer, which was added by addon."
+#define PLUGIN_INTRODUCTION "This plugin add custom local and global chat for server!"
 #define PLUGIN_AUTHOR "O1nekon"
 
 // The version of your plugin. If you do not know how to set it, please refer

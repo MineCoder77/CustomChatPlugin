@@ -5,35 +5,20 @@
 
 extern Logger logger;
 
-class JsonConfig;
-
-class JsonConfigDestroyer {
-private:
-	JsonConfig* p_instance;
-public:
-	~JsonConfigDestroyer();
-	void initialize(JsonConfig* p);
-};
-
 class JsonConfig {
 private:
-	static JsonConfig* p_instance;
-	static JsonConfigDestroyer destroyer;
 	nlohmann::json json_config;
 	bool create_file();
 	bool isset_config_path();
 	bool isset_config();
-protected:
+	void set_config();
+	static JsonConfig instance;
 	JsonConfig() {}
 	JsonConfig(const JsonConfig&) = delete;
 	JsonConfig& operator=(JsonConfig&) = delete;
-	~JsonConfig() {}
-	friend class JsonConfigDestroyer;
 public:
 	void init();
-	long get_price(std::string item_id);
-	bool isset_value(std::string item_id);
-	void set_config();
 	static JsonConfig& get_instance();
+	int get_radius();
 	nlohmann::json get_config();
-};
+;};

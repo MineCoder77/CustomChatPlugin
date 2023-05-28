@@ -3,13 +3,15 @@
 #include <llapi/EventAPI.h>
 #include <llapi/mc/ColorFormat.hpp>
 #include <llapi/mc/Player.hpp>
-#include <llapi/mc/ItemStack.hpp>
-#include <llapi/mc/Item.hpp>
-#include "../../manager/BuyerManager.cpp"
+#include <llapi/mc/Vec3.hpp>
+#include "../../manager/headers/ChatManager.hpp"
 
 class EventHandler {
 private:
-	void on_player_attack();
+	EventHandler() {}
+	static EventHandler instance;
+	void on_player_chat();
 public:
 	void init();
+	static EventHandler& get_instance();
 };

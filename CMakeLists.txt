@@ -17,7 +17,6 @@ include_directories(
 
 link_directories(
     ${CMAKE_SOURCE_DIR}/SDK/lib
-    ${CMAKE_SOURCE_DIR}/src/lib
 )
 
 add_definitions(
