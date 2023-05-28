@@ -1,7 +1,8 @@
 # 🎁CustomChat Plugin!
 
-| Native language  |    C++   |
-| Content language  |    RU   |
+
+| Native language   |    C++   |
+| Content language  |    RU    |
 | ----------------- | -------- |
 
 😋 This code add CustomChat for u server!
