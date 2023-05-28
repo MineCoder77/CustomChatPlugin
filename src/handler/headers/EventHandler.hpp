@@ -11,6 +11,8 @@ private:
 	EventHandler() {}
 	static EventHandler instance;
 	void on_player_chat();
+	EventHandler(const EventHandler&) = delete;
+	EventHandler& operator=(EventHandler&) = delete;
 public:
 	void init();
 	static EventHandler& get_instance();
