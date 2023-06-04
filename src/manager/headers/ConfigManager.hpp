@@ -21,4 +21,4 @@ public:
 	static JsonConfig& get_instance();
 	int get_radius();
 	nlohmann::json get_config();
-;};
+};
