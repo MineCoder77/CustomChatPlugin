@@ -19,7 +19,7 @@ namespace ChatManager {
 
 	inline std::string remove_letter_msg(std::string& message)
 	{
-		return message.erase(0, 1);;
+		return message.erase(0, 1);
 	}
 
 	std::string get_local_chat(std::string& name, std::string& message) {
