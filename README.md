@@ -13,7 +13,7 @@
 
 -----
 
-Releases <a href="https://github.com/MineCoder77/BuyerPlugin/releases/tag/CustomChatPlugin">here</a>.
+Releases <a href="https://github.com/MineCoder77/CustomChatPlugin/releases">here</a>.
 
 -----
 
