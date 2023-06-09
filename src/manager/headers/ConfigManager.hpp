@@ -16,6 +16,7 @@ private:
 	JsonConfig() {}
 	JsonConfig(const JsonConfig&) = delete;
 	JsonConfig& operator=(JsonConfig&) = delete;
+	bool check_config_correct();
 public:
 	void init();
 	static JsonConfig& get_instance();
