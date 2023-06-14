@@ -42,7 +42,8 @@ namespace ChatManager {
 
 	inline std::string croning_symbol(std::string& chat) {
 		for (const auto& x : chat)
-			chat.replace(chat.find(x), 1, fmt::format("\{}", x));
+			if (x == ' ') continue;
+			else chat.replace(chat.find(x), 1, fmt::format("\{}", x));
 		return chat;
 	}
 }
