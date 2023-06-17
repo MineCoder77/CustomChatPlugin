@@ -45,7 +45,7 @@ bool JsonConfig::isset_config() {
 	return std::filesystem::exists("plugins/CustomChat/settings.json");
 }
 
-bool JsonConfig::check_config_correct() {
+bool JsonConfig::is_config_correct() {
 	if (!get_config()["settings"]["radius"].is_number() || !get_config()["settings"]["radius"].is_number_integer()) {
 		logger.error("Радиус должен быть числом целочисленного типа!");
 		return false;
@@ -84,7 +84,7 @@ void JsonConfig::init() {
 			logger.info("Файл settings.json успешно создан!");
 	}
 	set_config();
-	check_config_correct() ? logger.info("Конфиг-файл настроен правильно. Плагин работает!") : 
+	is_config_correct() ? logger.info("Конфиг-файл настроен правильно. Плагин работает!") : 
 		logger.error("В конфиг-файле были найдены ошибки. Пока Вы их не исправите, код не будет работать!");
 	
 }
